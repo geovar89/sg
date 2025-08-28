@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF5E14;
-    --secondary: #5F656F;
+    --primary:#c07020;/* #FF5E14;*/
+    --secondary:#5F656F;
     --light: #F5F5F5;
-    --dark: #02245B;
+    --dark: #324975/*#02245B;*/
 }
 
 .back-to-top {
@@ -114,7 +114,7 @@ h6,
     transition: .5s;
 }
 
-.navbar .navbar-brand {
+/*.navbar .navbar-brand {
     position: relative;
     padding-right: 50px;
     height: 75px;
@@ -132,13 +132,13 @@ h6,
     right: -25px;
     transform: skewX(-30deg);
     background-color: var(--primary);
-}
+}*/
 
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 20px 0;
     color: var(--dark);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     outline: none;
 }
@@ -239,7 +239,7 @@ h6,
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--light);
 }
 
@@ -722,4 +722,13 @@ h6,
     .externalLinks {
         display: none; /* Κρύβει το στοιχείο */
     }
+}
+
+.radius{
+    border-radius: 3.5rem !important;
+}
+
+.img-fluid-alt{
+    width:100%;
+    height:200px;
 }
