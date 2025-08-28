@@ -46,7 +46,7 @@
     <script>
     fetch('components/navBar.html')
         .then(res => res.text())
-        .then(html => document.getElementById('navBarComponent').innerHTML = html)
+        .then(html => $('#navBarComponent').after(html))
         .then(setTimeout(() => {
             document.getElementById("navContact").classList.add("active")
             }, 300));
