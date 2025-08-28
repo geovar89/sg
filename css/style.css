@@ -736,3 +736,10 @@ h6,
     width:200;
     height:250px;
 }
+
+@media screen and (max-width: 991.98px) {
+    .container { display: flex; flex-flow: column; }
+    .one { order: 1; }
+    .two { order: 2;  }
+    .three { order: 3; }
+}
