@@ -46,7 +46,7 @@
     <script>
     fetch('components/navBar.html')
         .then(res => res.text())
-        .then(html => document.getElementById('navBarComponent').innerHTML = html)
+        .then(html => $('#navBarComponent').after(html))
         .then(setTimeout(() => {
             document.getElementById("navAbout").classList.add("active")
             }, 300));
@@ -77,7 +77,7 @@
                 <div class="col-lg-6">
                     <div class="row gx-3 h-100">
                         <div class="col-12 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/carousel-1.jpg">
+                            <img class="img-fluid" src="img/ezgif-frame-001.jpg">
                         </div>
                         <!--div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
                             <img class="img-fluid" src="img/about-2.jpg">
@@ -85,179 +85,70 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
-                    <h1 class="display-5 mb-4">We Are Leader In Industrial Market</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
+                    <h1 class="display-5 mb-4">Our Mission</h1>
+                    <p class="mb-4">Our mission is to  provide tailored worldwide logistics and consulting solutions that ensure  efficient, cost-effective cargo movement and deliver a high level of service as well as lasting value for our clients.
                     </p>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="flex-shrink-0 bg-primary p-4">
-                            <h1 class="display-2">25</h1>
-                            <h5 class="text-white">Years of</h5>
-                            <h5 class="text-white">Experience</h5>
+                </div>
+            </div>
+            <div class="row pt-5 g-5  bg-dark">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
+                    <h1 class="display-5 text-white mb-4">Our Vision</h1>
+                    <p class="text-white mb-4">Our vision is to be the most trusted partner redefining marine and global logistics. We will achieve this through smart, innovative solutions that set new standards of efficiency, service, flexibility and sustainability.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-12 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/ezgif-frame-001.jpg">
                         </div>
-                        <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Power & Energy</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Civil Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Chemical Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Mechanical Engineering</p>
-                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Oil & Gas Engineering</p>
-                        </div>
+                        <!--div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/about-2.jpg">
+                        </div-->
                     </div>
-                    <div class="row pt-2">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-envelope-open text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Email us</p>
-                                    <h5 class="mb-0">info@example.com</h5>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            
+            <div class="row pt-5 g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-12 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/ezgif-frame-001.jpg">
                         </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Call us</p>
-                                    <h5 class="mb-0">+012 345 6789</h5>
-                                </div>
-                            </div>
-                        </div>
+                        <!--div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/about-2.jpg">
+                        </div-->
                     </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
+                    <h1 class="display-5 mb-4">Our Story</h1>
+                    <p class="mb-4">Brightflow was created by experienced professionals in marine logistics and global freight forwarding having noticed a  clear need for a partner who combines personal, high-level service with speed, reliability, consulting expertise, flexibility and innovation. This vision is our unwavering commitment in everything we do.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
-
-   <!-- Service Start-->
-    <div class="container-fluid bg-dark footer mt-5 py-5">
-        <div class="container">
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Our Values</p>
-                <h1 class="display-5 text-white mb-4">These Are Our Values</h1>
-            </div>
-            <div class="row gy-5 gx-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Reliability</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">We ensure every shipment arrives safely and on time, no matter the distance or conditions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Safety First</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Safety is at the core of every operation, from vessel maintenance to cargo handling.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Sustainability</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">We commit to eco-friendly practices, reducing environmental impact across all logistics operations.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-5 gx-4 d-flex justify-content-around">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Customer-Centric Service</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Our clients’ needs guide every decision, delivering tailored solutions and exceptional service.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Innovation & Efficiency</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">We embrace technology and smart planning to optimize routes, minimize costs, and ensure seamless delivery.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated Team Members</h1>
+                <!--p class="fw-medium text-uppercase text-primary mb-2">Our Team</p-->
+                <h1 class="display-5 mb-5">Our Team</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 d-flex justify-content-between">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid-team-alt" src="img/team-1.jpg" alt="">
                         <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
+                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 60px; height: 60px;">
                                 <i class="fa fa-2x fa-share text-white"></i>
                             </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center ps-4"
+                                 style="height: 60px; width:170px">
                                 <h5>Rob Miller</h5>
                                 <span class="text-primary">CEO & Founder</span>
                                 <div class="team-social">
@@ -274,13 +165,13 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid-team-alt" src="img/team-2.jpg" alt="">
                         <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
+                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 60px; height: 60px;">
                                 <i class="fa fa-2x fa-share text-white"></i>
                             </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center ps-4"
+                                 style="height: 60px; width:170px">
                                 <h5>Adam Crew</h5>
                                 <span class="text-primary">Project Manager</span>
                                 <div class="team-social">
@@ -297,13 +188,13 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <img class="img-fluid-team-alt" src="img/team-3.jpg" alt="">
                         <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
+                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 60px; height: 60px;">
+                                <i class="fa fa-share text-white"></i>
                             </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center ps-4"
+                                style="height: 60px; width:170px">
                                 <h5>Peter Farel</h5>
                                 <span class="text-primary">Engineer</span>
                                 <div class="team-social">
@@ -324,27 +215,16 @@
     <!-- Team End -->
 
 
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
 
+   <!-- Service Start-->
+    <div id="valuesComponent"></div>
+
+    <script>
+    fetch('components/values.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('valuesComponent').innerHTML = html);
+    </script>
+    <!-- Service End -->
 
     <!-- Contact Start -->
     <div id="contactFormComponent"></div>
