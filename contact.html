@@ -76,7 +76,11 @@
     <script>
     fetch('components/contactForm.html')
         .then(res => res.text())
-        .then(html => document.getElementById('contactFormComponent').innerHTML = html);
+        .then(html => $('#contactFormComponent').after(html))
+        .then(setTimeout(()=>{
+            document.getElementById("map-form").style.display="block"
+            document.getElementById("map-form").classList.add("d-flex")
+        },1000)) 
     </script>
     <!-- Contact End -->
 
