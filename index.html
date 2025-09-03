@@ -70,6 +70,16 @@
     </div>
     <!-- Spinner End -->
     
+    <div id="navBarComponentMobile" ></div>
+
+    <script>
+    fetch('components/navBarMobile.html')
+        .then(res => res.text())
+        .then(html => $('#navBarComponentMobile').after(html))
+        .then(setTimeout(() => {
+            document.getElementById("navContact").classList.add("active")
+            }, 300));
+    </script>
 
 
     <!-- Carousel Start -->
@@ -85,7 +95,7 @@
                      <div class="carousel-caption" style="flex-direction: column;">
                         <div class="container">
                             <div class="row">
-                                <nav class="indexNavBar navbar navbar-expand-lg navbar-light sticky-top py-0 pe-5 align-self-end  ">
+                                <nav class="indexNavBar navbar navbar-expand-lg navbar-light sticky-top py-0 pe-5 align-self-end" >
                                     <a href="index.html" class="navbar-brand ps-5 me-0">
                                         <img src="img/BRIGHTFLOW LOGO TRANSPARENT.png" width="160" alt="">
                                     </a>
