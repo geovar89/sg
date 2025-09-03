@@ -76,37 +76,42 @@
     </div>
     <!-- Spinner End -->
     <!-- Navbar Start -->
-    <div id="navBarComponent"></div>
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;padding:0px!important;">
+        <div id="navBarComponentMobile"></div>
 
-    <script>
-    fetch('components/navBar.html')
-        .then(res => res.text())
-        .then(html => $('#navBarComponent').after(html))
-        .then(setTimeout(() => {
-            document.getElementById("navServices").classList.add("active")
-            }, 500));
-    </script>
-    <!-- Navbar End -->
+        <script>
+            fetch('components/navBarMobile.html')
+                .then(res => res.text())
+                .then(html => $('#navBarComponentMobile').after(html))
+                .then(setTimeout(() => {
+                    document.getElementById("navServicesMob").classList.add("active")
+                }, 400));
+        </script>
 
+        <div id="navBarComponent" class="indexNavBar"></div>
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-3 text-white animated slideInRight">Services</h1>
-            <!--nav aria-label="breadcrumb">
-                <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Services</li>
-                </ol>
-            </nav-->
+        <script>
+            fetch('components/navBar.html')
+                .then(res => res.text())
+                .then(html => $('#navBarComponent').after(html))
+                .then(setTimeout(() => {
+                    document.getElementById("navServices").classList.add("active")
+                    document.getElementById("navnav").classList.add("indexNavBar");
+                }, 300));
+        </script>
+        <!-- Navbar End -->
+        <!-- Page Header Start -->
+        <div class="container-fluid mb-5">
+            <div class="container py-5">
+                <h1 class="display-3 text-white">Services</h1>
+            </div>
         </div>
     </div>
     <!-- Page Header End -->
 
-
     <!-- Service Start-->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 limit-width">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6">
@@ -121,16 +126,16 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 mb-4">Marine Logistics</h2>
+                    <h2 class="display-6 mb-4">Marine Logistics</h2>
                     <p class="mb-4">We forward ship spares from suppliers to vessels   — utilizing airfreight, seafreight, courier, hand-carry and arranging the delivery on board to even the most challenging destinations— ensuring vessels are always supplied without delay, in the most efficient and cost-effective way.
                     </p>
                 </div>
             </div>
-            <div class="row pt-3 g-5  bg-dark" style="margin-top: 10px; padding-bottom: 30px;">
+            <div class="row pt-3 g-5  bg-light" style="margin-top: 10px; padding-bottom: 30px;">
                 <div class="col-lg-6 wow fadeIn two" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 text-white mb-4">General Logistics</h2>
-                    <p class="text-white mb-4">We manage the global transport of general cargo, providing the same level of efficiency, reliability, and tailored consulting to meet the unique needs of diverse industries. From small parcels to full truckloads, we ensure your cargo reaches its destination safely and on time.
+                    <h2 class="display-6 mb-4">General Logistics</h2>
+                    <p class="mb-4">We manage the global transport of general cargo, providing the same level of efficiency, reliability, and tailored consulting to meet the unique needs of diverse industries. From small parcels to full truckloads, we ensure your cargo reaches its destination safely and on time.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -158,16 +163,16 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 mb-4">Project Logistics</h2>
+                    <h2 class="display-6 mb-4">Project Logistics</h2>
                     <p class="mb-4">Our expertise extends to the management of complex and oversized cargo operations. We provide end-to-end planning and execution for specialized projects, ensuring the safe, reliable, and on-time transport of unique freight.
                     </p>
                 </div>
             </div>
-            <div class="row pt-3 g-5  bg-dark" style="margin-top: 10px; padding-bottom: 30px;">
+            <div class="row pt-3 g-5  bg-light" style="margin-top: 10px; padding-bottom: 30px;">
                 <div class="col-lg-6 wow fadeIn two" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 text-white mb-4">Warehousing & Digital  Inventory Management</h2>
-                    <p class="text-white mb-4">We provide storage in bonded and strategically positioned warehouses near major ports and airports, giving our clients a strong competitive advantage in speed and accessibility. Our digital system provides real-time tracking of stored items, fast preparation and dispatch as well as full transparency  and control over every movement.
+                    <h2 class="display-6 mb-4">Warehousing & Digital  Inventory Management</h2>
+                    <p class="mb-4">We provide storage in bonded and strategically positioned warehouses near major ports and airports, giving our clients a strong competitive advantage in speed and accessibility. Our digital system provides real-time tracking of stored items, fast preparation and dispatch as well as full transparency  and control over every movement.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -195,16 +200,16 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 mb-4">Customs and compliance</h2>
+                    <h2 class="display-6 mb-4">Customs and compliance</h2>
                     <p class="mb-4">We offer comprehensive support for all customs and compliance procedures worldwide. Our services ensure seamless handling of all documentation and regulations, minimizing delays and reducing risk for your shipments.
                     </p>
                 </div>
             </div>
-            <div class="row pt-3 g-5  bg-dark" style="margin-top: 10px; padding-bottom: 30px;">
+            <div class="row pt-3 g-5  bg-light" style="margin-top: 10px; padding-bottom: 30px;">
                 <div class="col-lg-6 wow fadeIn two" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 text-white mb-4">Logistics Strategy & In-house Consulting</h2>
-                    <p class="text-white mb-4">We provide hands-on support and advisory services to overcome challenges , meet critical deadlines, optimize logistics strategies, and reduce costs. We also act as your internal consultant, assisting with the establishment, training, and digitization of your in-house logistics department.
+                    <h2 class="display-6 mb-4">Logistics Strategy & In-house Consulting</h2>
+                    <p class="mb-4">We provide hands-on support and advisory services to overcome challenges , meet critical deadlines, optimize logistics strategies, and reduce costs. We also act as your internal consultant, assisting with the establishment, training, and digitization of your in-house logistics department.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -232,7 +237,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
-                    <h2 class="display-5 mb-4">Value added services</h2>
+                    <h2 class="display-6 mb-4">Value added services</h2>
                     <p class="mb-4">We provide a comprehensive range of value-added services designed to secure and optimize your operations. These include QHSE compliance and related documentation, risk management, and cargo insurance. Our commitment to delivering a seamless service is backed by our 24/7 support and tailored client reporting, which provides key performance indicators (KPIs) to ensure accuracy, efficiency, and long-term value for your business.
                     </p>
                 </div>
@@ -242,7 +247,7 @@
     <!-- Service End -->
 
     <!-- Contact Start -->
-    <div id="contactFormComponent"></div>
+    <div id="contactFormComponent" class="bg-light"></div>
 
     <script>
     fetch('components/contactForm.html')
@@ -250,20 +255,19 @@
         .then(html => document.getElementById('contactFormComponent').innerHTML = html);
     </script>
     <!-- Contact End -->
-
     
-    <div id="footerComponent"></div>
+    <!--footer start-->
+    <div id="footerComponent" class="bg-dark"></div>
 
     <script>
     fetch('components/footer.html')
         .then(res => res.text())
         .then(html => document.getElementById('footerComponent').innerHTML = html);
     </script>
-
-
+    <!--footer end-->
 
     <!--copyright start-->
-    <div id="copyrightComponent"></div>
+    <div id="copyrightComponent" class="bg-dark"></div>
 
     <script>
     fetch('components/copyright.html')
