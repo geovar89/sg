@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary:#c07020;/* #FF5E14;*/
+    --primary:#817400;/* #FF5E14;*//*#9c7a28*/
     --secondary:#5F656F;
     --light: #F5F5F5;
     --dark: #324975/*#02245B;*/
@@ -137,7 +137,7 @@ h6,
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 20px 0;
-    color: var(--dark);
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     outline: none;
@@ -196,9 +196,21 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+    background: linear-gradient(to bottom, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 80%);
     z-index: 1;
 }
+
+.carousel-caption-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    
+    z-index: 1;
+}
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -395,7 +407,7 @@ h6,
     position: absolute;
     padding: 65px 30px 25px 30px;
     width: 100%;
-    height: 100%;
+    height: 70px;
     top: 0;
     left: 0;
     display: flex;
@@ -405,10 +417,6 @@ h6,
     text-align: center;
     background: #FFFFFF;
     transition: .5s;
-}
-
-.service-item:hover .service-title {
-    top: -100%;
 }
 
 .service-item .service-text {
@@ -426,10 +434,6 @@ h6,
     transition: .5s;
 }
 
-.service-item:hover .service-text {
-    top: 0;
-}
-
 .service-item .service-text::before {
     position: absolute;
     content: "";
@@ -440,10 +444,6 @@ h6,
     transform: skewY(-12deg);
     background: #FFFFFF;
     transition: .5s;
-}
-
-.service-item:hover .service-text::before {
-    top: -55px;
 }
 
 .service-item .btn {
@@ -468,7 +468,9 @@ h6,
     background: var(--primary);
 }
 
-
+.service-title {
+    height:80px;
+}
 /*** Project ***/
 .project-carousel {
     position: relative;
@@ -710,18 +712,26 @@ h6,
 }
 
 .externalLinks {
-  display: none; /* Κρύβει το στοιχείο */
+  display: none; 
   
 }
 @media (max-width: 991.98px) {
     .externalLinks {
-        display: block; /* Κρύβει το στοιχείο */
+        display: block;
+        border-radius: 10px; 
     }
 }
 @media (min-width: 992px) {
     .externalLinks {
-        display: none; /* Κρύβει το στοιχείο */
+        display: none;
     }
+}
+.styleNavButtons{
+    border-radius: 10px; 
+}
+
+.reverseNavButtons{
+    
 }
 
 .radius{
@@ -742,4 +752,48 @@ h6,
     .one { order: 1; }
     .two { order: 2;  }
     .three { order: 3; }
+}
+
+.cont1ainer{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.indexNavBar{
+    color: #fff !important;
+    
+
+}
+
+
+.indexNavBar .navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 20px 0;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+
+.indexNavBar .navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+    .limit-width {
+        max-width:1024px;
+    }
+}
+
+
+#myline {
+    height: 2px;
+    background-color: rgb(122, 16, 16);
+    border: 1px solid black;
+    width: 120px;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Home | Bright Flow</title>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8488afb0-4b8b-4e57-99c3-7df7b7db83d9"  type="text/javascript"></script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="marine logistics, global logistics, freight forwarding, project cargo, logistics consulting, warehouse management, customs compliance" name="keywords">
     <meta content="Brightflow προσφέρει έξυπνες, αξιόπιστες λύσεις ναυτιλιακών και γενικών logistics παγκοσμίως, με έμφαση στην καινοτομία και την αποτελεσματικότητα." name="description">
@@ -68,18 +69,7 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
-    <!-- Navbar Start -->
-    <div id="navBarComponent"></div>
-
-    <script>
-    fetch('components/navBar.html')
-        .then(res => res.text())
-        .then(html => $('#navBarComponent').after(html))
-        .then(setTimeout(() => {
-            document.getElementById("navHome").classList.add("active")
-            }, 300));
-    </script>
-    <!-- Navbar End -->
+    
 
 
     <!-- Carousel Start -->
@@ -91,14 +81,53 @@
                     <video autoplay playsinline muted preload="auto" poster="img/ezgif-frame-001.jpg" id="bg-video" aria-label="Intro video με παρουσίαση της Bright Flow">
                         <source src="videos/intro.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption">
+                    <!-- Navbar Start -->
+                     <div class="carousel-caption" style="flex-direction: column;">
+                        <div class="container">
+                            <div class="row">
+                                <nav class="indexNavBar navbar navbar-expand-lg navbar-light sticky-top py-0 pe-5 align-self-end  ">
+                                    <a href="index.html" class="navbar-brand ps-5 me-0">
+                                        <img src="img/BRIGHTFLOW LOGO TRANSPARENT.png" width="160" alt="">
+                                    </a>
+                                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                                        <div class="navbar-nav ms-auto p-4 p-lg-0">
+                                            <a href="index.html" class="nav-item  nav-link" id="navHome" style="display:none">Home</a>
+                                            <a href="about.html" class="nav-item nav-link" id="navAbout">About</a>
+                                            <a href="service.html" class="nav-item nav-link" id="navServices">Services</a>
+                                            <a href="sustainability.html" class="nav-item nav-link" id="navSustainability">Sustainability</a>
+                                            <!--div class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                                <div class="dropdown-menu bg-light m-0">
+                                                    <a href="project.html" class="dropdown-item">Projects</a>
+                                                    <a href="feature.html" class="dropdown-item">Features</a>
+                                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                                </div>
+                                            </div-->
+                                            <a href="contact.html" class="nav-item nav-link" id="navContact">Get In Touch</a>
+                                            <a href="files/presentation.pdf" target="_blank" rel="noopener noreferrer" class="nav-link externalLinks"><i class="fas fa-download"></i>&nbspPresentation</a>
+                                            <a href="https://connect.logika.gr/" target="_blank" rel="noopener noreferrer" class="nav-link externalLinks"><i class="fas fa-user"></i>&nbspBrightHub</a>
+                                        </div>
+                                        <a href="files/presentation.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary px-2 d-none d-lg-block styleNavButtons"><i class="fas fa-download"></i>&nbspPresentation</a>
+                                        <a href="https://connect.logika.gr/" target="_blank" rel="noopener noreferrer" class="btn btn-primary px-2 d-none d-lg-block styleNavButtons" style="margin-left:10px"><i class="fas fa-user"></i>&nbspBrightHub</a>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navbar End-->
+                    <div class="carousel-caption" style="top:100px;background:none;">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 text-start">
-                                    
                                     <h1 class="fs-1 text-white mb-5 animated slideInRight">Bright solutions. Seamless flow.</h1>
                                     <p class="fs-5 fw-medium text-white animated slideInRight">Brightflow delivers smart, reliable marine and general logistics solutions worldwide.</p>
-                                    <!--a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a-->
+                        
                                 </div>
                             </div>
                         </div>
@@ -111,8 +140,8 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
+    <div class="container-xxl py-5 limit-width">
+        <div class="0">
             <div class="row g-5">
                 <div class="col-lg-6">
                     <div class="row gx-3 h-100">
@@ -122,15 +151,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
-                    <h2 class="display-6 mb-4" style="font-size: 26px;">Blending logistics excellence with consulting insight, we keep your cargo moving— efficiently, reliably, and cost-effectively, ensuring smooth processes and lasting business growth.</h2>
+                    <!--p class="fw-medium text-uppercase text-primary mb-2">About Us</p-->
+                    <h2 class="display-5 mb-4">About Us</h2>
+                    <p class="display-6 mb-3" style="font-size: 18px;">Blending logistics excellence with consulting insight, we keep your cargo moving— efficiently, reliably, and cost-effectively, ensuring smooth processes and lasting business growth.</p>
                     <div class="row pt-2 gy-3 gx-3 d-flex justify-content-center">
                         <div class="d-flex justify-content-center"> 
                             <div class="col-6 d-flex justify-content-end" style="margin-right:5px">
-                                <a href="https://connect.logika.gr/" class="btn btn-primary py-3 px-4 animated slideInRight radius">Learn more </a>
+                                <a href="https://connect.logika.gr/" class="btn btn-primary py-2 px-3 animated slideInRight radius">Learn more </a>
                             </div>
                             <div class="col-6 d-flex justify-content-start" style="margin-left:5px">
-                                <a href="contact.html" class="btn btn-primary py-3 px-4 animated slideInRight radius">Contact Us</a>
+                                <a href="contact.html" class="btn btn-primary py-2 px-3 animated slideInRight radius">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +173,7 @@
 
 
     <!-- Service Start-->
-    <div id="servicesComponent"></div>
+    <div id="servicesComponent" class="bg-light"></div>
 
     <script>
     fetch('components/services.html')
@@ -153,12 +183,13 @@
     <!-- Service End -->
 
     <!-- Features Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 limit-width">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <hr id="myline"/>
                     <h2 class="display-5 mb-4">Customer Portal</h2>
-                    <p class="mb-4">Stay in control with our customers’ portal, designed to give you complete visibility and seamless management of your logistics.
+                    <p class="mb-4" >Stay in control with our customers’ portal, designed to give you complete visibility and seamless management of your logistics.
                     </p>
                     <div class="row gy-4">
                         <div class="ms-4">
@@ -169,7 +200,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="">
-                                <a href="contact.html" class="btn btn-primary py-3 px-5 animated slideInRight radius">Access Customer Portal</a>
+                                <a href="contact.html" class="btn btn-primary py-2 px-3 animated slideInRight radius">Access Customer Portal</a>
                             </div>
                         </div>
 
@@ -188,7 +219,7 @@
 
     
     <!-- Contact Start -->
-    <div id="contactFormComponent"></div>
+    <div id="contactFormComponent" class="bg-light"></div>
 
     <script>
     fetch('components/contactForm.html')
@@ -198,7 +229,7 @@
     <!-- Contact End -->
 
     <!--footer start-->
-    <div id="footerComponent"></div>
+    <div id="footerComponent" class="bg-dark"></div>
 
     <script>
     fetch('components/footer.html')
@@ -208,7 +239,7 @@
     <!--footer end-->
 
     <!--copyright start-->
-    <div id="copyrightComponent"></div>
+    <div id="copyrightComponent" class="bg-dark"></div>
 
     <script>
     fetch('components/copyright.html')
