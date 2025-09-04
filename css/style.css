@@ -189,7 +189,7 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 80%);
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%);
     z-index: 1;
 }
 
@@ -233,7 +233,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/ezgif-frame-001.jpg) center center no-repeat;
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/ezgif-frame-001.jpg) center center no-repeat;
     background-size: cover;
 }
 
