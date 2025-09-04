@@ -723,7 +723,12 @@ h6,
 }
 
 .reverseNavButtons{
-    
+    background-color: transparent;
+}
+
+.reverseFontButtons{
+    background-color: transparent;
+    color :var(--primary);
 }
 
 .radius{
