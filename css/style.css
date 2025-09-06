@@ -236,12 +236,12 @@ h6,
     background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/ezgif-frame-001.jpg) center center no-repeat;
     background-size: cover;
 }
-.page-header_sustainability {
+.page-header.page-header_sustainability {
     background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/sustainability\ photo.jpeg) center center no-repeat;
     background-size: cover;
 }
-.page-header {
-    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/ezgif-frame-001.jpg) center center no-repeat;
+.page-header.page-header-about {
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/About.jpeg) center center no-repeat;
     background-size: cover;
 }
 
