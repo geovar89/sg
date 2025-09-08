@@ -244,6 +244,14 @@ h6,
     background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/About.jpeg) center center no-repeat;
     background-size: cover;
 }
+.page-header.page-header-services {
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/services.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.page-header.page-header-contact {
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/contact\ us.jpeg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
