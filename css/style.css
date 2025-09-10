@@ -812,6 +812,7 @@ h6,
     .limit-width {
         max-width:1024px;
     }
+}
 
 @media screen and (max-width: 991.98px) {
     .navBarMobile{
@@ -828,7 +829,7 @@ h6,
         font-weight: 500;
         outline: none;
     }
-}
+
 
 }
 
