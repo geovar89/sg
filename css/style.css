@@ -245,7 +245,7 @@ h6,
     background-size: cover;
 }
 .page-header.page-header-services {
-    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/services.jpeg) center center no-repeat;
+    background: linear-gradient(to bottom, rgb(142 166 206) 30%, rgba(2, 36, 91, 0) 100%), url(../img/services.jpeg) top no-repeat;
     background-size: cover;
 }
 .page-header.page-header-contact {
@@ -812,7 +812,6 @@ h6,
     .limit-width {
         max-width:1024px;
     }
-}
 
 @media screen and (max-width: 991.98px) {
     .navBarMobile{
@@ -829,6 +828,7 @@ h6,
         font-weight: 500;
         outline: none;
     }
+}
 
 }
 
@@ -847,7 +847,6 @@ h6,
         font-weight: 500;
         outline: none;
     }
-
 }
 
 @media (min-width: 992px) {
