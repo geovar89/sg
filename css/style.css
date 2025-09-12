@@ -817,10 +817,10 @@ h6,
 
 @media screen and (max-width: 991.98px) {
     .navBarMobile{
-        display:d-flex;
+        display:d-flex !important;
     }
     .indexNavBar {
-        display:none
+        display:none !important;
     }
     .navbar .navbar-nav .nav-link {
         margin-right: 35px;
@@ -836,10 +836,10 @@ h6,
 
 @media (min-width: 992px)  {
     .navBarMobile{
-        display:none;
+        display:none !important;
     }
     .indexNavBar {
-        display:d-flex;
+        display:d-flex !important;
     }
     .navbar .navbar-nav .nav-link {
         margin-right: 35px;
